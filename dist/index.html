@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facade Virtual Pay</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0ac7c3e175.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Facade Virtual Pay <i class="fas fa-receipt"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a id="pagePay" class="nav-link">Pay</a>
+                </li>
+                <li class="nav-item">
+                    <a id="pageInfo" class="nav-link">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid d-block" id="payment">
+    <div class="row my-4 d-none" id="information">
+        <div class="col-md-12">
+            <div class="alert alert-dismissible alert-info">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4 class="alert-heading">¡Informacion!</h4>
+                <p id="result" class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fuga omnis non
+                    nostrum quae alias, culpa nobis, ex corporis assumenda perspiciatis quod praesentium modi illum? Sequi esse
+                    cum accusamus aut.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <div class="jumbotron" style="background-color: white; border-color: #ddd; border-style: solid; border-width: 1px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card bg-secondary">
+                            <div class="card-header"><h3>Client <i class="fas fa-user"></i></h3></div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputName">Client Name:</label>
+                                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                                      </div>   
+                                      <div class="form-group">
+                                        <label for="inputTotalFounds">Total Founds:</label>
+                                        <input type="number" class="form-control" id="inputTotalFounds" placeholder="Enter your total founds">
+                                      </div>      
+                                      <div class="form-group">
+                                        <label for="inputEmail">Email address:</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone else.</small>
+                                      </div>                             
+                                </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-secondary">
+                            <div class="card-header"><h3>Pay <i class="fas fa-dollar-sign"></i></h3></div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputPay">Total Pay:</label>
+                                        <input type="text" class="form-control" id="inputPay" placeholder="Enter your pay">
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="btnPay"  type="button" class="btn btn-primary btn-block">Make the payment</button>
+                                    </div>                           
+                                </form>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid d-none" id="info">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1 class="display-3">Hello!</h1>
+                <p class="lead">This is a simple page to payments using the pattern design Facade and TypeScript.</p>
+                <hr class="my-4">
+                <p>Developed by Carlos Rodriguez <i class="fas fa-code"></i>.</p>
+                <a class="btn btn-primary" href="https://github.com/CarlosM0905" target="_blank"><h4 class="text-white mb-0">Github <i class="fab fa-github"></i></h4></a>
+              </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script type="module" src="index.js"></script>
+</html>
